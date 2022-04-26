@@ -1,0 +1,844 @@
+Files already downloaded and verified
+[I] Model loaded from ./mbnv1_pt.pt
+mode: Non-pruned model=True, Test accuracy=77.1500
+about to prune
+0.0
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 0.2841
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.0701
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.0283
+Accuracy of the model on the 60000 train images:  97.367996 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.0092
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.1745
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.0396
+Accuracy of the model on the 60000 train images:  98.659996 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.0326
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.0766
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.0193
+Accuracy of the model on the 60000 train images:  98.828003 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.0112
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.0112
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.0072
+Accuracy of the model on the 60000 train images:  98.973999 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0424
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.0022
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.0326
+Accuracy of the model on the 60000 train images:  99.023994 %
+mode: thres=0.0, Test accuracy=77.0100
+0.05
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 0.1822
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.1450
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.1766
+Accuracy of the model on the 60000 train images:  94.357994 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.0442
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.0567
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.1010
+Accuracy of the model on the 60000 train images:  97.931999 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.0381
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.0521
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.0179
+Accuracy of the model on the 60000 train images:  98.306000 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.0367
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.0356
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.0203
+Accuracy of the model on the 60000 train images:  98.648003 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0526
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.0142
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.0183
+Accuracy of the model on the 60000 train images:  98.773994 %
+mode: thres=0.05, Test accuracy=76.9100
+0.1
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 0.5044
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.4997
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.2281
+Accuracy of the model on the 60000 train images:  89.930000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.1025
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.0990
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.1155
+Accuracy of the model on the 60000 train images:  95.975998 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.0264
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.0294
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.1048
+Accuracy of the model on the 60000 train images:  97.613998 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.0698
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.0501
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.0312
+Accuracy of the model on the 60000 train images:  98.169998 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0422
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.0031
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.1016
+Accuracy of the model on the 60000 train images:  98.388000 %
+mode: thres=0.1, Test accuracy=76.4200
+0.15000000000000002
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 0.7007
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.4801
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.5048
+Accuracy of the model on the 60000 train images:  84.001999 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.3077
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.1745
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.1899
+Accuracy of the model on the 60000 train images:  92.798004 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.1027
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.0652
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.1437
+Accuracy of the model on the 60000 train images:  96.709999 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.0324
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.0248
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.0881
+Accuracy of the model on the 60000 train images:  97.397995 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0680
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.1013
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.0466
+Accuracy of the model on the 60000 train images:  97.804001 %
+mode: thres=0.15000000000000002, Test accuracy=75.6300
+0.2
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 0.8736
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.6855
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.6026
+Accuracy of the model on the 60000 train images:  77.416000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.2732
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.3093
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.2641
+Accuracy of the model on the 60000 train images:  88.133995 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.1445
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.1785
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.1583
+Accuracy of the model on the 60000 train images:  94.741997 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.0672
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.1594
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.1032
+Accuracy of the model on the 60000 train images:  96.533997 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0486
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.0512
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.0945
+Accuracy of the model on the 60000 train images:  97.195992 %
+mode: thres=0.2, Test accuracy=74.8900
+0.25
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.1723
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.7941
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.6442
+Accuracy of the model on the 60000 train images:  72.075996 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.5634
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.4213
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.4732
+Accuracy of the model on the 60000 train images:  83.774002 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.1324
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.2706
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.0883
+Accuracy of the model on the 60000 train images:  92.012001 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.1522
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.1142
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.1899
+Accuracy of the model on the 60000 train images:  95.357994 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.0984
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.0505
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.1525
+Accuracy of the model on the 60000 train images:  96.485992 %
+mode: thres=0.25, Test accuracy=74.5500
+0.30000000000000004
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.1154
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 0.9215
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.7069
+Accuracy of the model on the 60000 train images:  67.197998 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.5509
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.6237
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.6033
+Accuracy of the model on the 60000 train images:  79.671997 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.2590
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.3119
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.3168
+Accuracy of the model on the 60000 train images:  88.497993 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.1283
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.1866
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.3041
+Accuracy of the model on the 60000 train images:  93.302002 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.1328
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.1121
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.1473
+Accuracy of the model on the 60000 train images:  95.299995 %
+mode: thres=0.30000000000000004, Test accuracy=73.7800
+0.35000000000000003
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.3213
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.0852
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 0.8761
+Accuracy of the model on the 60000 train images:  61.197998 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.8168
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.5755
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.8002
+Accuracy of the model on the 60000 train images:  74.610001 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.3140
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.5647
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.5006
+Accuracy of the model on the 60000 train images:  84.305992 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.4030
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.2830
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.2604
+Accuracy of the model on the 60000 train images:  90.120003 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.1751
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.1533
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.2799
+Accuracy of the model on the 60000 train images:  93.545998 %
+mode: thres=0.35000000000000003, Test accuracy=72.4800
+0.4
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.5655
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.4208
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.1796
+Accuracy of the model on the 60000 train images:  53.604000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 0.8431
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.9540
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.9174
+Accuracy of the model on the 60000 train images:  68.903999 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.5739
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.5723
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.5875
+Accuracy of the model on the 60000 train images:  78.687996 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.3497
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.4535
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.5159
+Accuracy of the model on the 60000 train images:  85.598000 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.2890
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.3318
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.2953
+Accuracy of the model on the 60000 train images:  90.138000 %
+mode: thres=0.4, Test accuracy=71.4800
+0.45
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.8187
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.3303
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.2916
+Accuracy of the model on the 60000 train images:  47.981998 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.2136
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.0353
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.0324
+Accuracy of the model on the 60000 train images:  64.647995 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.8007
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.7995
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.7576
+Accuracy of the model on the 60000 train images:  74.582001 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.3808
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.6538
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.6932
+Accuracy of the model on the 60000 train images:  81.442001 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.3178
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.2391
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.3045
+Accuracy of the model on the 60000 train images:  86.582001 %
+mode: thres=0.45, Test accuracy=70.1600
+0.5
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 1.7708
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.5504
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.5543
+Accuracy of the model on the 60000 train images:  42.602001 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.1741
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 0.8918
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 0.9367
+Accuracy of the model on the 60000 train images:  60.161995 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.7946
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 0.9559
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.8175
+Accuracy of the model on the 60000 train images:  70.186005 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.7133
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.7268
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.6638
+Accuracy of the model on the 60000 train images:  76.966003 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.4786
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.5466
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.4087
+Accuracy of the model on the 60000 train images:  82.077995 %
+mode: thres=0.5, Test accuracy=69.3100
+0.55
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.0997
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.6663
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.4340
+Accuracy of the model on the 60000 train images:  37.883999 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.2440
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.3002
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.3030
+Accuracy of the model on the 60000 train images:  54.755997 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 0.9427
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.0008
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 0.8098
+Accuracy of the model on the 60000 train images:  64.993996 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.6989
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.8553
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 0.7570
+Accuracy of the model on the 60000 train images:  71.465996 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.6772
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.7985
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.6271
+Accuracy of the model on the 60000 train images:  76.467995 %
+mode: thres=0.55, Test accuracy=67.0000
+0.6000000000000001
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.1210
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.8798
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.7820
+Accuracy of the model on the 60000 train images:  34.335999 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.6472
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.3403
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.2807
+Accuracy of the model on the 60000 train images:  50.809998 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.0908
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.1422
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.0865
+Accuracy of the model on the 60000 train images:  60.705994 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 0.7025
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 0.8808
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.0491
+Accuracy of the model on the 60000 train images:  67.375999 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.7331
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 0.7043
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 0.7405
+Accuracy of the model on the 60000 train images:  71.874001 %
+mode: thres=0.6000000000000001, Test accuracy=64.6400
+0.65
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.1851
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 1.8191
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.7259
+Accuracy of the model on the 60000 train images:  29.132000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.4373
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.4746
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.3625
+Accuracy of the model on the 60000 train images:  45.757999 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.2630
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.2149
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.0997
+Accuracy of the model on the 60000 train images:  55.360001 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.1141
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.1826
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.1226
+Accuracy of the model on the 60000 train images:  61.639999 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.8469
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.0694
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.1151
+Accuracy of the model on the 60000 train images:  66.127998 %
+mode: thres=0.65, Test accuracy=61.9000
+0.7000000000000001
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.1476
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.0244
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 1.7280
+Accuracy of the model on the 60000 train images:  23.072001 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.8825
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.4760
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.3944
+Accuracy of the model on the 60000 train images:  39.599998 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.4814
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.5641
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.3727
+Accuracy of the model on the 60000 train images:  49.958000 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.3186
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.1056
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.0206
+Accuracy of the model on the 60000 train images:  56.211998 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 0.9951
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.1805
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.1254
+Accuracy of the model on the 60000 train images:  60.912003 %
+mode: thres=0.7000000000000001, Test accuracy=59.3100
+0.75
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.3018
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.1393
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 2.1187
+Accuracy of the model on the 60000 train images:  18.407999 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.9802
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.8988
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.7009
+Accuracy of the model on the 60000 train images:  33.285999 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.6559
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.5663
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.5219
+Accuracy of the model on the 60000 train images:  42.924000 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.3338
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.3088
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.3348
+Accuracy of the model on the 60000 train images:  49.202000 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 1.1180
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.1776
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.2458
+Accuracy of the model on the 60000 train images:  53.635998 %
+mode: thres=0.75, Test accuracy=52.3900
+0.8
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.3206
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.2435
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 2.1095
+Accuracy of the model on the 60000 train images:  16.548000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 2.0647
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.9505
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.6752
+Accuracy of the model on the 60000 train images:  29.624001 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.8032
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.5316
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.6006
+Accuracy of the model on the 60000 train images:  39.736000 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.6461
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.3211
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.5048
+Accuracy of the model on the 60000 train images:  45.716000 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 1.3139
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.3343
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.2406
+Accuracy of the model on the 60000 train images:  49.925999 %
+mode: thres=0.8, Test accuracy=51.2400
+0.8500000000000001
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.3312
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.2209
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 2.1380
+Accuracy of the model on the 60000 train images:  17.226000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 1.9634
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 1.9115
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.8014
+Accuracy of the model on the 60000 train images:  28.095999 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.7422
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.7256
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.6580
+Accuracy of the model on the 60000 train images:  36.649998 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.6647
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.5577
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.5443
+Accuracy of the model on the 60000 train images:  41.599998 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 1.4380
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.3814
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.5041
+Accuracy of the model on the 60000 train images:  45.197998 %
+mode: thres=0.8500000000000001, Test accuracy=46.0200
+0.9
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.2725
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.3022
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 2.1414
+Accuracy of the model on the 60000 train images:  15.485999 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 2.0623
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 2.0828
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 1.8405
+Accuracy of the model on the 60000 train images:  25.068001 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.8196
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.7498
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.7668
+Accuracy of the model on the 60000 train images:  33.212002 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.8008
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.5797
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.6804
+Accuracy of the model on the 60000 train images:  38.310001 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 1.7271
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.7583
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.5996
+Accuracy of the model on the 60000 train images:  42.270000 %
+mode: thres=0.9, Test accuracy=44.6400
+0.9500000000000001
+about to fraction prune
+In channel fraction pruning function
+conv1.weight
+layers.0.conv2.weight
+layers.1.conv2.weight
+layers.2.conv2.weight
+layers.3.conv2.weight
+layers.4.conv2.weight
+layers.5.conv2.weight
+layers.6.conv2.weight
+layers.7.conv2.weight
+layers.8.conv2.weight
+layers.9.conv2.weight
+layers.10.conv2.weight
+layers.11.conv2.weight
+layers.12.conv2.weight
+about to apply mask
+in apply mask function
+about to remove channel
+In remove channel
+Epoch: [ 1/ 5], Step: [ 100/ 390], Loss: 2.1853
+Epoch: [ 1/ 5], Step: [ 200/ 390], Loss: 2.1116
+Epoch: [ 1/ 5], Step: [ 300/ 390], Loss: 2.2102
+Accuracy of the model on the 60000 train images:  15.436000 %
+Epoch: [ 2/ 5], Step: [ 100/ 390], Loss: 2.0668
+Epoch: [ 2/ 5], Step: [ 200/ 390], Loss: 2.0181
+Epoch: [ 2/ 5], Step: [ 300/ 390], Loss: 2.1687
+Accuracy of the model on the 60000 train images:  21.542000 %
+Epoch: [ 3/ 5], Step: [ 100/ 390], Loss: 1.9976
+Epoch: [ 3/ 5], Step: [ 200/ 390], Loss: 1.9174
+Epoch: [ 3/ 5], Step: [ 300/ 390], Loss: 1.7746
+Accuracy of the model on the 60000 train images:  26.768000 %
+Epoch: [ 4/ 5], Step: [ 100/ 390], Loss: 1.9567
+Epoch: [ 4/ 5], Step: [ 200/ 390], Loss: 1.7577
+Epoch: [ 4/ 5], Step: [ 300/ 390], Loss: 1.7356
+Accuracy of the model on the 60000 train images:  31.571999 %
+Epoch: [ 5/ 5], Step: [ 100/ 390], Loss: 1.8317
+Epoch: [ 5/ 5], Step: [ 200/ 390], Loss: 1.7375
+Epoch: [ 5/ 5], Step: [ 300/ 390], Loss: 1.7448
+Accuracy of the model on the 60000 train images:  34.289997 %
+mode: thres=0.9500000000000001, Test accuracy=36.1200

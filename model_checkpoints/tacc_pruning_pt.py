@@ -7,12 +7,16 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
 from torch.utils.tensorboard import SummaryWriter
-import mobilenet_rm_filt_pt as mb_pt
+import tacc_mobilenet as mb_pt
 import copy
+import onnx
+from onnx_tf.backend import prepare
+import tensorflow as tf
+
 
 batch_size = 128
-num_epochs = 5
-learning_rate = 0.001
+num_epochs = 75
+learning_rate = 0.005
 enable_cuda = True
 # enable_cuda = False
 load_my_model = True
@@ -105,7 +109,7 @@ class LeNet5(nn.Module):
             if name in self.mask_dict.keys():
                 param.data *= self.mask_dict[name]
 
-# model = LeNet5()
+#model = LeNet5()
 model = mb_pt.MobileNetv1()
 model = model.to(torch.device('cuda'))
 
@@ -114,14 +118,14 @@ criterion_sum = nn.CrossEntropyLoss(reduction='sum')
 #optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 iteration = 0
 
-# train_acc = []
-# train_loss = []
+train_acc = []
+train_loss = []
 
-# test_acc = []
-# test_loss = []
+test_acc = []
+test_loss = []
 
-def train(epoch, model):
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+def train(epoch, model, optimizer):
+    #optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     global iteration
     model.train()
     correct = 0
@@ -176,7 +180,7 @@ if load_my_model:
     test(0, mode='Non-pruned model', value='True', model=model)
 else:
     for epoch in range(num_epochs):
-        train(epoch, model)
+        #train(epoch, model)
         test(epoch, mode='test', value='True', model=model)
         torch.save(model.state_dict(),'./checkpoints/saved_model.pt')
     exit(0)
@@ -217,8 +221,9 @@ def channel_fraction_pruning(model, fraction=0.2):
 
 res1 = []
 num_params = []
+vals = [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95]
 print("about to prune")
-for prune_thres in np.arange(0,1,0.05):
+for prune_thres in vals:
     print(prune_thres)
     if pruning_method=='mag_prune':
         prune_model_thres(model, prune_thres)
@@ -230,19 +235,28 @@ for prune_thres in np.arange(0,1,0.05):
         new_model._apply_mask()
         print("about to remove channel")
         new_model = mb_pt.remove_channel(new_model)
+        optimizer = torch.optim.Adam(new_model.parameters(), lr=learning_rate)
         new_model = new_model.to(torch.device('cuda'))
+        #optimizer = optimizer.to(torch.device('cuda'))
         #torch.save(model.state_dict(),'mbnv1_pt.pt')
         #load_model(model)
 
     if fine_tune:
         for fine_tune_epoch in range(num_epochs):
-            train(fine_tune_epoch, new_model)
+            train(fine_tune_epoch, new_model, optimizer)
 
     acc = test(1, "thres", prune_thres, new_model)
     res1.append([prune_thres, acc])
     num_params.append(model_size(new_model, prune_thres==0))
-    model_name = "pruned_model_" + str(prune_thres)
-    torch.save(new_model.state_dict(), model_name)
+    model_name = "pruned_model_" + str(prune_thres) + ".pt"
+    #torch.save(new_model.state_dict(), model_name)
+    torch.save(new_model, model_name)
+    new_model.cpu()
+    random_input = torch.randn(1, 3, 32, 32)
+    output_model_path = "pruned_model_" + str(prune_thres) + ".onnx"
+    # torch.onnx.export(model, random_input, args.onnx_model_path, export_params=True, opset_version=10)
+    torch.onnx.export(new_model, random_input, output_model_path, export_params=True, opset_version=13)
+
 res1 = np.array(res1)
 
 #torch.save(new_model.state_dict(),'pruned_model.pt')
@@ -258,7 +272,7 @@ plt.savefig('{}_param_fine_tune_{}.png'.format(pruning_method, fine_tune))
 plt.close()
 
 plt.figure()
-plt.plot(np.arange(0, 1,0.05), res1[:,1])
+plt.plot(vals, res1[:,1])
 plt.title('{}: Accuracy vs Threshold'.format(pruning_method))
 plt.xlabel('Pruning Threshold')
 plt.ylabel('Test accuracy')
@@ -266,3 +280,37 @@ plt.grid()
 # plt.savefig('figs/{}_thresh_fine_tune_{}.png'.format(pruning_method, fine_tune))
 plt.savefig('{}_thresh_fine_tune_{}.png'.format(pruning_method, fine_tune))
 plt.close()
+
+
+
+for prune_thres in vals:
+    # model = mb_pt.MobileNetv1()
+    # input_model_path = "pruned_model_" + str(prune_thres) + ".pt"
+    # print(input_model_path)
+    # # model.load_state_dict(torch.load(args.pytorch_model_path, map_location=('cpu')))
+    # model.load_state_dict(torch.load(input_model_path, map_location=('cpu')))
+    # random_input = torch.randn(1,3,32,32)
+    #
+    # # torch.onnx.export(model, random_input, args.onnx_model_path, export_params=True, opset_version=10)
+    # torch.onnx.export(model, random_input, output_model_path, export_params=True, opset_version=13)
+
+    #converts to frozen pb file
+    output_model_path = "pruned_model_" + str(prune_thres) + ".onnx"
+    onnx_model = onnx.load(output_model_path)  # load onnx model
+    tf_rep = prepare(onnx_model)  # prepare tf representation
+    pb_file_name = "pruned_model_" + str(prune_thres) + ".pb"
+    tf_rep.export_graph(pb_file_name)  # export the model
+
+    #converts to tflite from pb
+    # make a converter object from the saved tensorflow file
+    converter = tf.compat.v1.lite.TFLiteConverter.from_saved_model(pb_file_name)
+    # tell converter which type of optimization techniques to use
+    converter.optimizations = [tf.lite.Optimize.DEFAULT]
+    # to view the best option for optimization read documentation of tflite about optimization
+    # go to this link https://www.tensorflow.org/lite/guide/get_started#4_optimize_your_model_optional
+
+    # convert the model
+    tf_lite_model = converter.convert()
+    # save the converted model
+    tf_lite_name = "pruned_model_" + str(prune_thres) + ".tflite"
+    open(tf_lite_name, 'wb').write(tf_lite_model)
